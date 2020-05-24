@@ -30,13 +30,13 @@
 #include <stdio.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <libgen.h>
 #include <unistd.h>
 #include <string.h>
 #include <stdbool.h>
 #include <ctype.h>
 #include <sys/types.h>
 #include <pwd.h>
-#include <sys/prctl.h>
 
 #ifndef USERNAME
 #    error Please define the user to deliver mail to with USERNAME
